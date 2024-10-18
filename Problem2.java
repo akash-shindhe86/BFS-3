@@ -1,5 +1,5 @@
-// Time Complexity : O(n) 
-// Space Complexity : O(e)
+// Time Complexity : O(v+e) 
+// Space Complexity : O(v)
 // Did this code successfully run on Leetcode : Yes
 // Any problem you faced while coding this : used the same logic Jaspinder explained in the class.
 
@@ -13,7 +13,7 @@ public class Problem2 {
         Queue<Node> q = new LinkedList<>();
         //create deep copy
         Node copy = new Node(node.val);
-        q.add(node);
+        q.add(node); //O(v)
         map.put(node,copy);
 
         while(!q.isEmpty()){
